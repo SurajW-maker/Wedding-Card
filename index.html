@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Wedding Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- AOS Library for Scroll Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- 🌸 Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans&display=swap" rel="stylesheet">
+
+<!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- ✅ Navbar -->
+  <header class="navbar">
+    <div class="logo">💍 Rahul ❤️ Sheetal</div>
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#our-story">Our Story</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+  
+  <!-- 🖼️ Hero Section -->
+<section class="hero">
+  <div class="overlay">
+    <div class="hero-content">
+      <!-- Circle Content -->
+      <div class="name-circle">
+        <h1>Rahul ❤️ Sheetal</h1>
+        <p>We're Getting Married!</p>
+        <p class="wedding-date">18th May 2025</p>
+        <div class="heart-icon">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="#e91e63">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+                     2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 
+                     4.5 2.09C13.09 3.81 14.76 3 16.5 3 
+                     19.58 3 22 5.42 22 8.5c0 3.78-3.4 
+                     6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🕒 Countdown Section -->
+<section class="countdown-section">
+  <div class="countdown-card">
+    <h2>Countdown to Our Big Day</h2>
+    <div class="countdown" id="separate-countdown">
+      <div><span id="cd-days">00</span><br>Days</div>
+      <div><span id="cd-hours">00</span><br>Hours</div>
+      <div><span id="cd-minutes">00</span><br>Minutes</div>
+      <div><span id="cd-seconds">00</span><br>Seconds</div>
+    </div>
+  </div>
+</section>
+<!-- 💖 Our Story Section -->
+<section class="our-story-section">
+  <div class="story-container">
+
+    <!-- 👦 Groom Info -->
+    <div class="partner groom">
+      <img src="banner/1.png" alt="Groom" class="partner-img" />
+      <h3>Rahul Kumar</h3>
+      <p> IAS Buldana Discrict ☕.</p>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- 💌 Story Timeline -->
+    <div class="story-timeline" id="our-story">
+      <h2>Our Story</h2>
+      <div class="timeline-item">
+        <h4>💫 First Meet</h4>
+        <p>We crossed paths, and a beautiful chapter began. A glance turned into a smile, and the rest is history.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>💍 He Proposed</h4>
+        <p>With love in his eyes and a ring in hand, he asked, and she said "Yes".</p>
+      </div>
+      <div class="timeline-item">
+        <h4>❤️ Love Story</h4>
+        <p>From coffee dates to endless laughter, we grew closer every single day.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>🎉 Wedding Day</h4>
+        <p>18th May 2025 – The day we promise each other forever.</p>
+      </div>
+    </div>
+
+    <!-- 👰 Bride Info -->
+    <div class="partner bride">
+      <img src="banner/2.png" alt="Bride" class="partner-img" />
+      <h3>Sheetal Sharma</h3>
+      <p>A beautiful soul with a smile that lights up the world. Full of dreams, grace, and laughter 🌸.</p>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="gallery-slider-section" id="gallery">
+  <div class="gallery-container">
+    <h2>💖 Our Moments</h2>
+    <p class="subheading">A journey in every frame</p>
+
+    <div class="swiper gallerySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="images/1.png" alt="Moment 1">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/2.png" alt="Moment 2">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/3.png" alt="Moment 3">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/4.png" alt="Moment 4">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/5.png" alt="Moment 5">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/6.png" alt="Moment 6">
+        </div>
+
+      </div>
+
+      <!-- Optional navigation -->
+    
+    </div>
+  </div>
+</section>
+
+
+<section class="gallery-section" id="gallery">
+  <div class="gallery-container">
+    <h2>📸 Moments Captured</h2>
+    <p class="subheading">Cherished memories from our journey together</p>
+
+    <div class="gallery-grid">
+      <a href="images/1.png" class="gallery-item" data-lightbox="couple-album">
+        <img src="images/1.png" alt="Moment 1">
+      </a>
+      <a href="images/2.png" class="gallery-item" data-lightbox="couple-album">
+        <img src="images/2.png" alt="Moment 2">
+      </a>
+      <a href="images/3.png" class="gallery-item" data-lightbox="couple-album">
+        <img src="images/3.png" alt="Moment 3">
+      </a>
+      <a href="images/9.png" class="gallery-item" data-lightbox="couple-album">
+        <img src="images/9.png" alt="Moment 4">
+      </a>
+      <a href="images/5.png" class="gallery-item" data-lightbox="couple-album">
+        <img src="images/5.png" alt="Moment 5">
+      </a>
+      <a href="images/6.png" class="gallery-item" data-lightbox="couple-album">
+        <img src="images/6.png" alt="Moment 6">
+      </a>
+
+      <a href="images/7.png" class="gallery-item" data-lightbox="couple-album">
+        <img src="images/7.png" alt="Moment 7">
+      </a>
+
+      <a href="images/8.png" class="gallery-item" data-lightbox="couple-album">
+        <img src="images/8.png" alt="Moment 7">
+      </a>
+    </div>
+  </div>
+</section>
+<section class="program-section" id="program">
+  <div class="program-title">
+    <h2>💒 Wedding Program</h2>
+    <p class="subtitle">Celebrate with us in every moment</p>
+  </div>
+  <div class="program-cards">
+    
+    <!-- Haldi Ceremony -->
+    <div class="program-card" style="background-image: url('images/haldi1.png');">
+      <div class="overlay"></div>
+      <div class="content">
+        <h3>🌼 Haldi Ceremony</h3>
+        <p>Join us for a vibrant and joyful haldi celebration filled with color, laughter, and love.</p>
+        <span>17th May 2025 | 10:00 AM</span>
+      </div>
+    </div>
+
+    <!-- Wedding Ceremony -->
+    <div class="program-card main-card" style="background-image: url('images/6.png');">
+      <div class="overlay"></div>
+      <div class="content">
+        <h3>💍 Wedding Ceremony</h3>
+        <p>Be a part of our sacred union in the presence of family, friends, and timeless traditions.</p>
+        <span>18th May 2025 | 12:00 PM</span>
+      </div>
+    </div>
+
+    <!-- Lunch -->
+    <div class="program-card" style="background-image: url('images/restaurant4.jpg');">
+      <div class="overlay"></div>
+      <div class="content">
+        <h3>🍽️ Grand Lunch</h3>
+        <p>Indulge in a feast of flavors and celebration to mark the beautiful beginning.</p>
+        <span>18th May 2025 | 2:00 PM</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="rsvp-section" id="rsvp">
+  <div class="rsvp-container">
+    <h2>💌 RSVP</h2>
+    <p class="subtitle">Let us know if you'll be joining us on our special day</p>
+
+  <section class="rsvp-section" id="rsvp">
+  <div class="rsvp-card animated">
+    <img src="banner/flower-bottom.png" class="flower flower-left" alt="flower" />
+    <img src="banner/flower-bottom.png" class="flower flower-right" alt="flower" />
+    
+    <h2>You're Invited!</h2>
+    <p class="rsvp-sub">Please let us know if you’ll be joining our celebration</p>
+
+    <form class="rsvp-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="number" placeholder="Number of Guests" required />
+      <select required>
+        <option value="">Will you attend?</option>
+        <option value="yes">Yes, I’ll be there</option>
+        <option value="no">Sorry, can’t make it</option>
+      </select>
+      <button type="submit">Send RSVP</button>
+    </form>
+  </div>
+</section>
+
+<!-- Google Map -->
+<section class="map-wrapper">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509225!2d144.9537353155041!3d-37.81627974200448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577870d0e2d1e5c!2sVictoria%20State%20Library!5e0!3m2!1sen!2sin!4v1625249947230!5m2!1sen!2sin"
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
+</section>
+
+<!-- Location Details -->
+<section class="location-section" id="contact">
+  <div class="location-container">
+    <h2 class="location-heading">Location</h2>
+    <p class="address">Mas Montagnette, 19 West 21th Str.<br>
+      <a href="tel:+18438531810">+1 843-853-1810</a>
+    </p>
+
+    <div class="info-boxes">
+      <div class="info-card">
+        <h3>📞 Contact Details</h3>
+       <p><strong>Groom:</strong> Rahul Kumar</p>
+        <p>Phone: +91-9123456789</p>
+        <p><strong>Bride:</strong> Sheetal Sharma</p>
+        <p>Phone: +91-9876543210</p>
+      </div>
+      <div class="info-card">
+       <h3>📌 Wedding Venue</h3>
+        <p><strong>The Leela Palace, Jaipur</strong></p>
+        <p>Delhi Road, Jaipur, Rajasthan - 302028</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gap before Footer -->
+<div class="footer-gap"></div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <h2 class="footer-logo">Rahul ❤️ Sheetal</h2>
+
+    <ul class="footer-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Our Story</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Rsvp</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+    </div>
+
+    <p class="footer-copy">© 2025 created By Surya. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+    
+</body>
+</html>
