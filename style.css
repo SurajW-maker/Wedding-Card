@@ -226,8 +226,8 @@ html {
   background: #f8f8f8;
   display: flex;
   justify-content: center;
-  position: relative; /* <-- Not absolute */
-  z-index: 1; /* Ensure it's above background only if needed */
+  position: relative;
+  z-index: 1;
 }
 
 .countdown-card {
@@ -240,22 +240,18 @@ html {
   text-align: center;
 }
 
-/* .countdown-card h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
-  color: #333;
-} */
-
 .countdown-card h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 2.2em;
+  margin-bottom: 30px;
 }
 
 #separate-countdown {
   display: flex;
   justify-content: space-around;
   gap: 15px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 #separate-countdown div {
@@ -263,6 +259,9 @@ html {
   padding: 20px 30px;
   border-radius: 12px;
   box-shadow: inset 0 0 10px rgba(255, 105, 180, 0.3);
+  flex: 1 1 100px; /* Makes blocks flexible */
+  min-width: 100px;
+  text-align: center;
 }
 
 #separate-countdown span {
@@ -270,6 +269,50 @@ html {
   font-weight: bold;
   color: #d63384;
 }
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .countdown-card {
+    padding: 30px 20px;
+  }
+
+  .countdown-card h2 {
+    font-size: 1.8em;
+  }
+
+  #separate-countdown {
+    gap: 10px;
+  }
+
+  #separate-countdown div {
+    padding: 15px 20px;
+  }
+
+  #separate-countdown span {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-card h2 {
+    font-size: 1.5em;
+  }
+
+  #separate-countdown {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #separate-countdown div {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  #separate-countdown span {
+    font-size: 1.8em;
+  }
+}
+
 
 
 /* 💖 Our Story Section */
@@ -986,3 +1029,4 @@ h2{
     margin: 0 8px;
   }
 }
+
